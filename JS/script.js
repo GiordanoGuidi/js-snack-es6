@@ -69,7 +69,13 @@ const over70Grades = studentsList.filter(student =>{
     if(student.grades > 70) return true;
     else false;
 })
-console.log(over70Grades)
+console.log('sono fuori', over70Grades)
+// CREO ARRAY CON TOTALE VOTI > A 70 E ID > 120
+const over70GradesAndIdOver120 = over70Grades.filter(student=>{
+    if(student.id > 120) return true;
+    else return false;
+})
+console.log('OVER 70 E 120', over70GradesAndIdOver120)
 
 
 
