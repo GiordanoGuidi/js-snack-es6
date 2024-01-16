@@ -76,6 +76,11 @@ const over70GradesAndIdOver120 = over70Grades.filter(student=>{
     else return false;
 })
 console.log('OVER 70 E 120', over70GradesAndIdOver120)
+//CREO ARRAY CON NOMI DEGLI STUDENTI IN MAIUSCOLO
+const studentsNames = studentsList.map(student=>student.name.toUpperCase())
+console.log(studentsNames)
+
+
 
 
 
