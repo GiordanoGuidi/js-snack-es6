@@ -162,6 +162,15 @@ footballTeam.forEach(team => {
 });
 console.log(footballTeam)
 
+// CREO ARRAY CON NOMI E FALLI SUBITI
+// const {name,score,fouls} = footballTeam
+const newFootballTeam = footballTeam.map(({name,fouls})=>{
+    return {
+        name,
+        fouls
+    } 
+})
+console.log(newFootballTeam)
 
 
 
