@@ -110,6 +110,11 @@ const bikes = [
 
 
 
+// CREO ARRAY CON LA BICI PIU' LEGGERA
+const lighterbike = bikes.find(({weigth},i)=>{
+    console.log(weigth,i,)
+})
+
 
 
 
