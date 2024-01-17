@@ -87,16 +87,16 @@
 //CREO UN ARRAY DI OGGETTI
 const bikes = [
     {
-        name: 'simona',
-        weigth: 10
-    },
-    {
         name: 'marcella',
         weigth: 20
     },
     {
         name: 'jhonny',
         weigth: 15
+    },
+    {
+        name: 'simona',
+        weigth: 10
     },
     {
         name: 'clara',
@@ -108,12 +108,16 @@ const bikes = [
     },
 ]
 
+// CREO UN VALORE DI CONFRONTO
+let highestweigth = 1000;
+// CREO CICLO PER ITERARE IN OGNI OGGETTO
+bikes.forEach(bike => {
+    if(bike.weigth < highestweigth){
+        highestweigth = bike.weigth
+        console.log('bici piu leggera', bike)
+    }
+});
 
-
-// CREO ARRAY CON LA BICI PIU' LEGGERA
-const lighterbike = bikes.find(({weigth},i)=>{
-    console.log(weigth,i,)
-})
 
 
 
