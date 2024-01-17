@@ -85,39 +85,82 @@
 
 //#SNACK 3
 //CREO UN ARRAY DI OGGETTI
-const bikes = [
+// const bikes = [
+//     {
+//         name: 'marcella',
+//         weigth: 20
+//     },
+//     {
+//         name: 'jhonny',
+//         weigth: 15
+//     },
+//     {
+//         name: 'simona',
+//         weigth: 10
+//     },
+//     {
+//         name: 'clara',
+//         weigth: 12
+//     },
+//     {
+//         name: 'sonia',
+//         weigth: 17
+//     },
+// ]
+
+// CREO UN VALORE DI CONFRONTO
+// let highestweigth = 1000;
+// CREO CICLO PER ITERARE IN OGNI OGGETTO
+// bikes.forEach(bike => {
+//     if(bike.weigth < highestweigth){
+//         highestweigth = bike.weigth
+//         console.log('bici piu leggera', bike)
+//     }
+// });
+
+//#SNACK 4
+
+const footballTeam = [
     {
-        name: 'marcella',
-        weigth: 20
+        name:'Roma',
+        score: 0,
+        fouls: 0, 
     },
     {
-        name: 'jhonny',
-        weigth: 15
+        name:'Atalanta',
+        score: 0,
+        fouls: 0, 
     },
     {
-        name: 'simona',
-        weigth: 10
+        name:'Latina',
+        score: 0,
+        fouls: 0, 
     },
     {
-        name: 'clara',
-        weigth: 12
+        name:'Fidene',
+        score: 0,
+        fouls: 0, 
     },
     {
-        name: 'sonia',
-        weigth: 17
+        name:'Atalanta',
+        score: 0,
+        fouls: 0, 
+    },
+    {
+        name:'Regina',
+        score: 0,
+        fouls: 0, 
     },
 ]
 
-// CREO UN VALORE DI CONFRONTO
-let highestweigth = 1000;
-// CREO CICLO PER ITERARE IN OGNI OGGETTO
-bikes.forEach(bike => {
-    if(bike.weigth < highestweigth){
-        highestweigth = bike.weigth
-        console.log('bici piu leggera', bike)
-    }
+// CREO FUNZIONE PER GENERARE NUMERI RANDOM
+const randomNumberGenerator = () => Math.floor(Math.random() * 100) + 1;
+//AGGIUNGIAMO NUMERI RANDOM ALL'INTERNO DEI PUNTI E DEI FALLI SUBITI
+footballTeam.forEach(team => {
+    team.score = randomNumberGenerator();
+    team.fouls = randomNumberGenerator()
 });
-
+console.log(footballTeam)
 
 
 
