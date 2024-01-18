@@ -84,93 +84,93 @@
 //#-------------------------------------------------------
 
 //#SNACK 3
-//CREO UN ARRAY DI OGGETTI
-// const bikes = [
-//     {
-//         name: 'marcella',
-//         weigth: 20
-//     },
-//     {
-//         name: 'jhonny',
-//         weigth: 15
-//     },
-//     {
-//         name: 'simona',
-//         weigth: 10
-//     },
-//     {
-//         name: 'clara',
-//         weigth: 12
-//     },
-//     {
-//         name: 'sonia',
-//         weigth: 17
-//     },
-// ]
-
-// CREO UN VALORE DI CONFRONTO
-// let highestweigth = 1000;
-// CREO CICLO PER ITERARE IN OGNI OGGETTO
-// bikes.forEach(bike => {
-//     if(bike.weigth < highestweigth){
-//         highestweigth = bike.weigth
-//         console.log('bici piu leggera', bike)
-//     }
-// });
-
-//#SNACK 4
-
-const footballTeam = [
+// CREO UN ARRAY DI OGGETTI
+const bikes = [
     {
-        name:'Roma',
-        score: 0,
-        fouls: 0, 
+        name: 'marcella',
+        weigth: 20
     },
     {
-        name:'Atalanta',
-        score: 0,
-        fouls: 0, 
+        name: 'jhonny',
+        weigth: 15
     },
     {
-        name:'Latina',
-        score: 0,
-        fouls: 0, 
+        name: 'simona',
+        weigth: 10
     },
     {
-        name:'Fidene',
-        score: 0,
-        fouls: 0, 
+        name: 'clara',
+        weigth: 12
     },
     {
-        name:'Atalanta',
-        score: 0,
-        fouls: 0, 
-    },
-    {
-        name:'Regina',
-        score: 0,
-        fouls: 0, 
+        name: 'sonia',
+        weigth: 17
     },
 ]
 
-// CREO FUNZIONE PER GENERARE NUMERI RANDOM
-const randomNumberGenerator = () => Math.floor(Math.random() * 100) + 1;
-//AGGIUNGIAMO NUMERI RANDOM ALL'INTERNO DEI PUNTI E DEI FALLI SUBITI
-footballTeam.forEach(team => {
-    team.score = randomNumberGenerator();
-    team.fouls = randomNumberGenerator()
+// CREO UN VALORE DI CONFRONTO
+// CREO CICLO PER ITERARE IN OGNI OGGETTO
+let lightestbike = bikes[0 ]
+bikes.forEach(bike => {
+    if( bike.weigth < lightestbike.weigth){
+        lightestbike = bike
+    }
 });
-console.log(footballTeam)
+console.log(lightestbike)
+
+//#SNACK 4
+
+// const footballTeam = [
+//     {
+//         name:'Roma',
+//         score: 0,
+//         fouls: 0, 
+//     },
+//     {
+//         name:'Atalanta',
+//         score: 0,
+//         fouls: 0, 
+//     },
+//     {
+//         name:'Latina',
+//         score: 0,
+//         fouls: 0, 
+//     },
+//     {
+//         name:'Fidene',
+//         score: 0,
+//         fouls: 0, 
+//     },
+//     {
+//         name:'Atalanta',
+//         score: 0,
+//         fouls: 0, 
+//     },
+//     {
+//         name:'Regina',
+//         score: 0,
+//         fouls: 0, 
+//     },
+// ]
+
+// CREO FUNZIONE PER GENERARE NUMERI RANDOM
+// const randomNumberGenerator = () => Math.floor(Math.random() * 100) + 1;
+//AGGIUNGIAMO NUMERI RANDOM ALL'INTERNO DEI PUNTI E DEI FALLI SUBITI
+// footballTeam.forEach(team => {
+//     team.score = randomNumberGenerator();
+//     team.fouls = randomNumberGenerator()
+// });
+// console.log(footballTeam)
 
 // CREO ARRAY CON NOMI E FALLI SUBITI
 // const {name,score,fouls} = footballTeam
-const newFootballTeam = footballTeam.map(({name,fouls})=>{
-    return {
-        name,
-        fouls
-    } 
-})
-console.log(newFootballTeam)
+// const newFootballTeam = footballTeam.map(({name,fouls})=>{
+//     return {
+//         name,
+//         fouls
+//     } 
+// })
+// console.log(newFootballTeam)
 
 
 
